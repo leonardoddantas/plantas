@@ -1,0 +1,257 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-contaner {
+    display: flex;
+}
+
+.login-contaner img {
+    width: 50vw;
+    height: 100vh;
+}
+
+.login-form {
+    width: 50vw;
+    padding: 5%;
+    background-color: rgb(6,16,11);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h1 {
+    margin-bottom: 12px;
+    font-size: 3.5rem;
+}
+
+.login-form p {
+    margin-bottom: 50px;
+}
+
+.login-form form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    border: none;
+    padding: 5px;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}
+
+.input-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, rgb(51,89,51), rgb(129,187,105));
+}
+
+.login-form form button {
+    padding: 10px;
+    color: white;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(51,89,51), rgb(129,187,105));
+    transition: background-image 0.15s ease-in-out;
+}
+
+.login-form form button:hover {
+    background-image: linear-gradient(to right, rgb(38, 67, 38), rgb(110, 158, 90));
+    transform: scale(1.05);
+}
+
+.esqueceu-senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.esqueceu-senha a{
+    color: white;
+    text-decoration: none;
+}
+
+.esqueceu-senha a:hover{
+    text-decoration: underline;
+}
+
+body {
+    position: relative;
+}
+
+.fundo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/fundo-home.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    padding: 80px;
+}
+
+.foco {
+    padding: 60px;
+    backdrop-filter: blur(25px);
+    color: white;
+    border-radius: 10px;
+    height: 62vh;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.container header ul {
+    list-style: none;
+    display: flex;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.811);
+}
+
+.container header ul li a {
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.container h1 {
+    width: 70%;
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+
+.container p {
+    width: 70%;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.container button {
+    padding: 10px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    color: rgba(5, 7, 4, 0.768);
+}
+
+.container img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 100px;
+    width: 450px;
+}
+
+@media (max-width: 1200px) {
+
+    .login-form {
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .login-contaner img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1400px) {
+
+    .container h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .login-form {
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .input-wrapper{
+        width: 80vw;
+    }
+
+    .input-wrapper input {
+        padding: 0px;
+    }
+
+    .login-form form {
+        align-items: center;
+    }
+
+    .esqueceu-senha {
+        width: 80vw;
+    }
+
+    .login-form form button {
+        width: 80vw;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+    .container h1 {
+        width: 100%;
+        margin-bottom: 4%;
+        font-size: 2rem;
+    }
+
+    .container p {
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 4%;
+    }
+
+    .container img {
+        width: 200px;
+    }
+
+    .container header ul {
+        display: none;
+    }
+
+}
